@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
 
 mongoose.userSchema = new mongoose.Schema({
-    name: String,
+    first_name: String,
+    last_name: String,
+    date_of_birth: Date,
+    role: Object,
     email: String,
     password:String,
+    is_varified: Boolean,
 
 },
 {
